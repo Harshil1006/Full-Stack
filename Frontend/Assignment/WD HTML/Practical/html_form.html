@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br>
+    <form>
+        <fieldset>
+        <div>
+        <label for="">Full Name</label>
+        <input type="text" pattern="[A-Za-z]{3,8}" required title="Name" value="">
+            </div><br>
+            <div>
+        <label for="">Email:</label>
+        <input type="email" required title="Email">
+        </div><br>
+        <div>
+            <label for="">Phone Number</label>
+            <input type="tel" pattern="[6-9][0-9]{9}" maxlength="10">
+        </div><br>
+
+        <div>
+            <label for="">Subject:</label>
+            <select name="Subject" required>
+            <option value="" hidden></option>
+           <option value="Computer">Computer</option>
+            <option value="Science">Science</option>
+            <option value="Maths">Maths</option>
+            </select>
+        </div><br>
+
+            <label>Message:</label><br>
+            <textarea rows="4" cols="20" required></textarea>
+            <br><br>
+            <input type="submit">
+            </fieldset>
+    </form>
+</body>
+</html>
