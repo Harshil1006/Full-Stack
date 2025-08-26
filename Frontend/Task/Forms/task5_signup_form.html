@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+    <h1>Membership Application</h1>
+    <p>To apply for membership please complete all questions</p>
+    </fieldset><br>
+
+    <form>
+
+        <label><b>Name</b></label><br><br>
+        <input type="text" required title="First Name">
+        <input type="text" required title="Last Name"><br><br><br>
+
+        <label><b>Address</b></label><br><br>
+        <label>Street Address</label>
+        <input type="text" required title="Street Address" size="50"><br><br>
+        <label for="">Street Address 2</label>
+        <input type="text" required title="Street Address 2" size="50"><br><br>
+        <label for="">City</label>
+        <input type="text" required title="City" size="25"> - 
+        <label for="">State/Province</label>
+        <input type="text" required title="State/Province" size="25"><br><br>
+        <label for="">Postal/Zip Code</label>
+        <input type="tel" pattern="[0-9]{6}" required title="Postal/Zip Code" maxlength="6"> - 
+        <label for="">Country</label>
+        <select name="Country" required>
+            <option hidden>Please Select Country</option>
+            <option>India</option>
+            <option>China</option>
+            <option>USA</option>
+            <option>UK</option>
+            <option>Africa</option>
+            <option>Russia</option>
+        </select><br><br><br>
+
+        <label><b>Email</b></label><br><br>
+        <input type="email" required title="Email" size="45"><br><br>
+
+        <label><b>Home Number</b></label><br><br>
+        <label>Area Code</label>
+        <input type="tel" required title="Area Code"> - 
+        <label>Phone Number</label>
+        <input type="tel" pattern="[6-9][0-9]{9}" maxlength="10" required title="phone number"><br><br>
+
+         <label><b>Cellular Number</b></label><br><br>
+        <label>Area Code</label>
+        <input type="tel" required title="Area Code"> - 
+        <label>Phone Number</label>
+        <input type="tel" pattern="[6-9][0-9]{9}" maxlength="10" required title="phone number"><br><br>
+        
+         <label><b>Home Number</b></label><br><br>
+        <label>Area Code</label>
+        <input type="tel" required title="Area Code"> - 
+        <label>Phone Number</label>
+        <input type="tel" pattern="[6-9][0-9]{9}" maxlength="10" required title="phone number"><br><br>
+
+        <label for=""><b>Website</b></label><br><br>
+        <input type="text" required title="Website"><br><br><br>
+
+        <input type="submit">
+
+    </form>
+</body>
+</html>
