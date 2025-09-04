@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .down {
+            height: 200px;
+            width: 200px;
+            background-color: black;
+            clip-path: polygon(25% 0%, 75% 0%, 75% 50%, 100% 50%, 50% 100%, 0% 50%, 25% 50%);
+        }
+
+        .up {
+            height: 200px;
+            width: 200px;
+            background-color: blueviolet;
+            clip-path: polygon(50% 0%, 100% 50%, 75% 50%, 75% 100%, 25% 100%, 25% 50%, 0% 50%);
+            transform: translate(250px, -200px);
+        }
+
+        .left {
+            height: 200px;
+            width: 200px;
+            background-color: rgb(140, 1, 108);
+            clip-path: polygon(50% 0%, 50% 25%, 100% 25%, 100% 75%, 50% 75%, 50% 100%, 0% 50%);
+            transform: translate(500px, -400px);
+        }
+
+        .right {
+            height: 200px;
+            width: 200px;
+            background-color: lightcoral;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 50% 75%, 0% 75%, 0% 25%, 50% 25%);
+            transform: translate(750px, -600px);
+        }
+
+        .penta {
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            clip-path: polygon(50% 0%, 100% 40%, 75% 100%, 25% 100%, 0% 40%);
+            transform: translate(1000px,-800px)
+        }
+
+        .star {
+            height: 200px;
+            width: 200px;
+            background-color: darkblue;
+            clip-path: polygon(50% 0%, 70% 25%, 100% 25%, 85% 50%, 100% 75%, 70% 75%, 50% 100%, 30% 75%, 0% 75%, 15% 50%, 0% 25%, 30% 25%);
+            transform: translate(1250px,-1000px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="down"></div>
+    <div class="up"></div>
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="penta"></div>
+    <div class="star"></div>
+</body>
+
+</html>
