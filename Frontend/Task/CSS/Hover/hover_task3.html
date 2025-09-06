@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            height: 500px;
+            width: 400px;
+            border: 2px solid;
+            background-image: url(https://p.w3layouts.com/demos_new/template_demo/26-08-2021/webservice-liberty-demo_Free/1229779082/web/assets/images/p3.jpg);
+            background-size: 100% 100%;
+        }
+        .text{
+            font-size: 18px;
+            color: white;
+            margin: 390px 20px;
+            opacity: 0;
+            transition: .5s;
+        }
+        .main:hover .text{
+            opacity: 1;
+        }
+        .box{
+            height: 500px;
+            width: 400px;
+            background-color: rgba(0, 0, 0, .4);
+            transform: translate(0%,-875px);
+            opacity: 0;
+            transition: .5s;
+        }
+        .main:hover .box{
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="text"><h2>Ecommerce</h2>
+            Lorem ipsum dolor sit amet,consectetur<br>adipisicing elit.Cupiditate, quia.
+    </div>
+    <div class="box"></div>
+    </div>
+</body>
+
+</html>
