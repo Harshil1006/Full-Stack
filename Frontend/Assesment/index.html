@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Customer Interaction System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h2><b>Customer Interaction System </b></h2>
+    <form action="" onclick="return validation()">
+
+      <div class="form-group">
+        <label for="Full Name">Full Name:</label>
+        <input type="text" class="form-control" id="nm" placeholder="Enter Full Name" name="text">
+        <span id="nmerr"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="tel">Phone Number:</label>
+        <input type="tel" class="form-control" id="pn" placeholder="Enter Your Phone Number" pattern="[6-9][0-9]{9}" maxlength="10" name="tel">
+        <span id="pnber"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+        <span id="Emailerr"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="text">Vehical Details:</label>
+        <input type="text" class="form-control" id="vd" name="text">
+        <span id="vehd"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="text">Complaint/Issue Description:</label>
+        <textarea class="form-control" rows="5" id="comp"></textarea>
+        <span id="compdes"></span>
+      </div>
+
+      <div>
+        <input type="submit">
+      </div>
+      <br>
+    </form>
+
+  </div>
+
+  <script>
+    let name_tag = document.getElementById("nm")
+    let nmerr = document.getElementById("nmerr")
+
+    let mobile = document.getElementById("pn")
+    let mberr = document.getElementById("pnber")
+
+    let email = document.getElementById("email")
+    let Emailerr = document.getElementById("Emailerr")
+
+    let vd = document.getElementById("vd")
+    let vehd = document.getElementById("vehd")
+
+    let comp = document.getElementById("comp")
+    let compdes = document.getElementById("compdes")
+
+    function validation() {
+      if (name_tag.value == "" || name_tag.value == null) {
+        nmerr.innerHTML = "Full Name Required..."
+        nmerr.style.color = "red"
+        return false
+      }
+      else {
+        nmerr.innerHTML = ""
+      }
+
+      if (mobile.value == "" || mobile.value == null) {
+        pnber.innerHTML = "Phone Number Required..."
+        pnber.style.color = "red"
+        return false
+      }
+      else {
+        pnber.innerHTML = ""
+      }
+
+      if (email.value == "" || email.value == null) {
+        Emailerr.innerHTML = "Email required..."
+        Emailerr.style.color = "red"
+        return false
+      }
+      else {
+        Emailerr.innerHTML = ""
+      }
+
+      if (vd.value == "" || vd.value == null) {
+        vehd.innerHTML = "Vehicle Details Required..."
+        vehd.style.color = "red"
+        return false
+      }
+      else {
+        vehd.innerHTML = ""
+      }
+
+      if (comp.value == "" || comp.value == null) {
+        compdes.innerHTML = "Please fill the information..."
+        compdes.style.color = "red"
+        return false
+      }
+      else {
+        compdes.innerHTML = ""
+      }
+    }
+  </script>
+
+</body>
+
+</html>
