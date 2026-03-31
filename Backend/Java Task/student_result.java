@@ -17,7 +17,7 @@ public class student_result {
 		System.out.println("Enter Marks Of Subject 3 : ");
 		s3=sc.nextInt();
 		
-		total=s1=s2=s3;
-		System.out.print("Total : ",+total);
+		total=s1+s2+s3;
+		System.out.println("Total : "+total);
 	}
 }

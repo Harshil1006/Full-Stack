@@ -7,11 +7,11 @@ public class pattern_1 {
 		{
 			for(j=1;j<=i;j++)
 			{
-				for(k=1;k+i;k++) {
-			System.out.print("* ");
-		}
-			System.out.println();
+				for(k=1;k<=j;k++) {
+					System.out.print("* ");
+				}
 			}
+				System.out.println();
 		}
 	}
 }
