@@ -1,0 +1,19 @@
+package com.dao;
+
+import java.sql.Connection;
+
+import com.bean.Wishlist;
+import com.util.ProjectUtil;
+
+public class WishlistDao {
+
+	public static void addToWishlist(Wishlist w)
+	{
+		try {
+			Connection conn=ProjectUtil.createConnection();
+			String sql="insert into wishlist(pid,uid) values(?,?)";
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

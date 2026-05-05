@@ -1,0 +1,5 @@
+<%
+	int pid=Integer.parseInt(request.getParameter("pid"));
+
+
+%>

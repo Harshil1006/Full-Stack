@@ -1,0 +1,7 @@
+package com.bean;
+
+public class Cart {
+
+	private int cid,uid,pid,product_price,product_qty,total_price;
+	private boolean payment_status;
+}

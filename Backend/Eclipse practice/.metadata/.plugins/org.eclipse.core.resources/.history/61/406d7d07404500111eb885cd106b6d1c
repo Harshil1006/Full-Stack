@@ -1,0 +1,6 @@
+<%@ include file="header.jsp" %>
+
+<%
+	int pid=Integer.parseInt(request.getParameter("pid"));
+
+%>

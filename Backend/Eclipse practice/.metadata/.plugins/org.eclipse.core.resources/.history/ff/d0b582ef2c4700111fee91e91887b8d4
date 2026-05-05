@@ -1,0 +1,29 @@
+package com.controller;
+
+import java.io.IOException;
+
+import org.json .*;
+
+import com.bean.User;
+import com.razorpay.*;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+@WebServlet("/OrderCreation")
+public class OrderCreation extends HttpServlet {
+private static final long serialVersionUID = 1L
+
+protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+RazorpayClient client-null;
+String orderId=null;
+System.out.println(request.getParameter("amount"));
+try {
+client=new RazorpayClient("rzp_test_L9ejHjoXv1yD6u","nnBeqvHQKRbN2yi4Ctznsw9w");
+JSONObject options=new JSONObject();
+options.put("amount", request.getParameter("amount"));
+antinns.nut("currencv". "TNR"):
+
+I

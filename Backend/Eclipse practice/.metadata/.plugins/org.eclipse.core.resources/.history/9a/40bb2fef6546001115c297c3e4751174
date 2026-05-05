@@ -1,0 +1,4 @@
+<%
+	int cid=Integer.parseInt(request.getParameter("cid"));
+	int product_qty=Integer.parseInt(request.getParameter("product_qty"));
+%>
